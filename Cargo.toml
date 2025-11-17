@@ -8,7 +8,7 @@ include = ["src/**/*", "README.md", "LICENSE.md", "CHANGELOG.md"]
 license = "MIT"
 repository = "https://github.com/GitoxideLabs/prodash"
 readme = "README.md"
-rust-version = "1.74"
+# rust-version = "1.74"
 
 [lib]
 doctest = true
@@ -107,3 +107,5 @@ async-io = "2.2.1"
 name = "usage"
 path = "benches/usage.rs"
 harness = false
+
+#[workspace]
