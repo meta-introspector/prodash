@@ -34,7 +34,8 @@ required-features = [
 
 [features]
 default = ["progress-tree"]
-progress-tree = ["parking_lot"]
+progress-tree = [#"parking_lot"
+]
 progress-tree-hp-hashmap = ["dashmap"]
 progress-tree-log = ["log"]
 progress-log = ["log"]
@@ -60,7 +61,8 @@ local-time = ["jiff"]
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 [dependencies]
 dashmap = { version = "6.0.1", optional = true, default-features = false }
-parking_lot = { version = "0.12.1", optional = true, default-features = false }
+#parking_lot = { version = "0.12.1", optional = true, default-features = false }
+parking_lot = {workspace=true}
 
 # with-logging
 log = { version = "0.4.8", optional = true }
